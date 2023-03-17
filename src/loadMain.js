@@ -1,14 +1,10 @@
-import bannerimg from './img/banner.jpg';
  const loadMain=()=>{
      const mainContent = document.querySelector('#content');
      console.log('suh');
      const topPanel=document.createElement('div');
      topPanel.classList.add('top-panel');
      
-     const bannerImage = new Image();
-    bannerImage.id='banner-image';
-    bannerImage.src=bannerimg;
-    topPanel.appendChild(bannerImage);
+   
 
     const bannerText=document.createElement('h1');
     bannerText.classList.add('banner');
@@ -30,11 +26,11 @@ import bannerimg from './img/banner.jpg';
         navBar.appendChild(storyButton);
 
 
-        const employmentButton=document.createElement('button');
-        employmentButton.classList.add('nav-button');
-        employmentButton.id='employment-button';
-        employmentButton.textContent='Employment';
-        navBar.appendChild(employmentButton);
+        const homeButton=document.createElement('button');
+        homeButton.classList.add('nav-button');
+        homeButton.id='home-button';
+        homeButton.textContent='Home';
+        navBar.appendChild(homeButton);
 
     topPanel.appendChild(navBar);
     const contentPanel=document.createElement('div');
@@ -43,6 +39,10 @@ import bannerimg from './img/banner.jpg';
     mainContent.appendChild(topPanel);
     mainContent.appendChild(contentPanel);
     document.body.appendChild(mainContent);
-  
+
+    
+ 
+            
+ 
 }
 export default loadMain;
