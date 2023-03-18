@@ -1,0 +1,13 @@
+    Pasta Primavera - Fresh seasonal vegetables sautéed in garlic and olive oil, served over linguine pasta.
+
+    Spaghetti Carbonara - Traditional pasta dish made with creamy egg sauce, crispy pancetta, and Parmesan cheese.
+
+    Margherita Pizza - Classic Neapolitan pizza with San Marzano tomatoes, fresh mozzarella, and basil.
+
+    Caprese Salad - Fresh mozzarella, ripe tomatoes, and fragrant basil drizzled with extra-virgin olive oil and balsamic glaze.
+
+    Osso Buco - Braised veal shank in a rich tomato-based sauce served with creamy polenta.
+
+    Chicken Marsala - Sautéed chicken breasts in a flavorful Marsala wine sauce with mushrooms and garlic.
+
+    Tiramisu - Classic Italian dessert made with layers of coffee-soaked ladyfingers, mascarpone cream, and cocoa powder.

@@ -13,11 +13,11 @@
 
     const navBar=document.createElement('div');
     navBar.classList.add('nav-bar');
-        const reservationsButton=document.createElement('button');
-        reservationsButton.classList.add('nav-button');
-        reservationsButton.id='reservations-button';
-        reservationsButton.textContent='Reservations';
-        navBar.appendChild(reservationsButton);
+        const menuButton=document.createElement('button');
+        menuButton.classList.add('nav-button');
+        menuButton.id='menu-button';
+        menuButton.textContent='Menu';
+        navBar.appendChild(menuButton);
 
         const storyButton=document.createElement('button');
         storyButton.classList.add('nav-button');
