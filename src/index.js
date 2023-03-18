@@ -3,6 +3,8 @@ import loadStory from './loadStory.js';
 import loadHome from './loadHome.js';
 import loadMenu from './loadMenu.js';
 
+import style from './main.scss';
+
 const clear =element=>element.innerHTML='';
 
 console.log('boy');
