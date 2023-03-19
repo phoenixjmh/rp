@@ -1,10 +1,14 @@
-@import "nav";
+ $bgColor: rgb(26, 23, 23);
+$fontColor:white;
+
+
 @import "home";
+@import "nav";
 
 *{
-    --bgColor:rgb(26, 23, 23);
-
+    margin:0;
 }
+
 body{
 width:100vw;
 height:100vh;

@@ -1,6 +1,8 @@
 import homeimg from './img/HomeImage.png';
 
 const loadHome=(panel)=>{
+    const homePanel=document.createElement('div');
+    homePanel.classList.add('home-panel');
     const imgPanel = document.createElement('div');
     imgPanel.classList.add('img-panel');
     const bigHeader= document.createElement('h2');
@@ -25,8 +27,10 @@ const loadHome=(panel)=>{
     textBanner.appendChild(bigHeader);
     textBanner.appendChild(smallHeader);
     textBanner.appendChild(smallHeader2);
-    panel.appendChild(imgPanel);
-    panel.appendChild(textBanner);
+    homePanel.appendChild(imgPanel);
+    homePanel.appendChild(textBanner);
+    panel.appendChild(homePanel);
+   
 
 
 }

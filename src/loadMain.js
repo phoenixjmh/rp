@@ -7,7 +7,7 @@
    
 
     const bannerText=document.createElement('h1');
-    bannerText.classList.add('banner');
+    bannerText.id='restaurant-name';
     bannerText.textContent='Restaurant Name';
     topPanel.appendChild(bannerText);
 

@@ -1,5 +1,24 @@
-$navBG:rgb(40, 0, 0);
+$navBG:rgb(24, 15, 15);
+
 
 .top-panel{
-    background-color:$navBG;
+    background-color:$bgColor;
+    color:$fontColor;
+    position:fixed;
+    width:100%;
+    display:flex;
+
+    #restaurant-name{
+        margin:1rem;
+        font-size:3rem;
+    }
+    .nav-bar{
+        button{
+            height:100%;
+            background-color: $bgColor;
+            color:$fontColor;
+            border:1px solid rgba(255, 255, 255, 0.414);
+            padding:1rem;
+        }
+    }
 }
