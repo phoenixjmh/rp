@@ -2,26 +2,36 @@
 .menu-frame{
     margin-top:2rem;
     border:2px solid black;
-    height:80%;
-    width:60%;
+    height:100%;
+    width:80%;
     background-color: $bgColor;
+    @include mobile{
+        margin-top:0;
+        width:100%;
+        height:100%;
+        
+    }
     
 
     overflow:auto;
     .menu-item{
         text-align: center;
-        border-bottom:2px solid $themeFont;
+        border-bottom:1px solid $fontColor;
         color:$themeFont;
+        
         .dish-name{
-            font-size:2rem;
+            
+            font-size:1.5rem;
             padding:1rem;
             padding-top:2rem;
-
+            font-family: 'Eczar', serif;
         }
-            .dish-desc{
+        .dish-desc{
+                font-family: 'Courgette', cursive;
                 padding:1.5rem;
-                font-size:1.5rem;
+                font-size:1rem;
                 padding-bottom:2rem;
+                color:$fontColor;
             }
     }
 }

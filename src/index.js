@@ -10,8 +10,9 @@ const clear =element=>element.innerHTML='';
 console.log('boy');
 loadMain();
 const contentPanel=document.querySelector('.content-panel');
+loadStory(contentPanel);
 // loadHome(contentPanel);
-loadMenu(contentPanel);
+// loadMenu(contentPanel);
 
 const menuButton = document.querySelector('#menu-button');
 const storyButton = document.querySelector('#story-button');

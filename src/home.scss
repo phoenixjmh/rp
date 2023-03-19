@@ -5,16 +5,35 @@
 
 
  .home-panel{
-    height:70%;
+    overflow:auto;
+    margin-top:7vh;
+    margin-bottom:7vh;
+    @include mobile{
+        height:100%;
+        width:100%;
+        flex-direction:column;
+        margin-top:0;
+            margin-bottom:0;
+    }
     width:100%;
     display:flex;
-        background-color: $bgColor;
+        background-color: rgba($bgColor,0.9);
     .img-panel {
+        @include mobile{
+            width:100%;
+            height:10rem;
+            
+            
+        }
         width: 60%;
         height: 100%;
     
     
         #home-image {
+            @include mobile{
+                object-fit: contain;
+                
+            }
             object-fit: cover;
             width: 100%;
             height: 100%;
@@ -22,24 +41,51 @@
     }
 
     .text-banner {
+        @include mobile{
+            width:100%;
+            text-align: center;
+            margin:auto;
+        }
         margin:1rem;
         display: flex;
         flex-direction: column;
-        color:$themeFont;
+        color:$fontColor;
         width: 50%;
         height: 100%;
         justify-content: space-evenly;
         align-items: center;
     
         #big-header {
+            @include mobile{
+                font-size:4rem;
+            }
             font-size: clamp(16pt,7vw,64pt);
+            font-family: $rusticHeader;
         }
         
         #small-header,
         #small-header3 {
+            @include mobile{
+                margin:auto;
+            }
+            font-family: $cursiveFont;
+            margin:2rem;
             font-size: clamp(16pt, 1.5rem, 24pt);
         }
+        #small-header3 {
+            @include mobile{
+                margin:auto;
+            }
+            
+            font-size: clamp(16pt, 1rem, 24pt);
+        }
         #small-header2{
+            @include mobile{
+                margin:auto;
+                font-size:.7rem;
+                bottom:0;
+                left:5rem;
+            }
             position:relative;
             bottom:4rem;
             left:4rem;
