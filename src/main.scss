@@ -1,9 +1,11 @@
  $bgColor: rgb(26, 23, 23);
 $fontColor:white;
+$themeFont: hsla(36, 100%, 38%, 0.553);
 
 
 @import "home";
 @import "nav";
+@import "menu";
 
 *{
     margin:0;

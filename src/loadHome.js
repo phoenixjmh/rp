@@ -10,11 +10,19 @@ const loadHome=(panel)=>{
     bigHeader.id='big-header';
 
     const smallHeader= document.createElement('h2');
-    smallHeader.textContent= 'Savor the taste of italy in every dish';
+    smallHeader.textContent= '"Savor the taste of italy in every dish';
+   
+    const smallHeader3= document.createElement('h2');
+   smallHeader3.textContent= 'Experience the delicious and wholesome flavors of italy, brought to your plate with locally sourced, fresh ingredients.';
+
+
    const smallHeader2= document.createElement('h2');
-   smallHeader2.textContent= 'Experience the delicious and wholesome flavors of italy, brought to your plate with locally sourced, fresh ingredients.';
+   smallHeader2.textContent= '-Basically Everyone';
+
+   
   smallHeader.id='small-header';
   smallHeader2.id='small-header2'
+  smallHeader3.id='small-header3'
 
       const homeImage = new Image();
     homeImage.id='home-image';
@@ -27,6 +35,7 @@ const loadHome=(panel)=>{
     textBanner.appendChild(bigHeader);
     textBanner.appendChild(smallHeader);
     textBanner.appendChild(smallHeader2);
+    textBanner.appendChild(smallHeader3);
     homePanel.appendChild(imgPanel);
     homePanel.appendChild(textBanner);
     panel.appendChild(homePanel);

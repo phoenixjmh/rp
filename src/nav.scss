@@ -1,24 +1,42 @@
 $navBG:rgb(24, 15, 15);
-
+$themeFont: hsla(36, 100%, 38%, 0.553);
 
 .top-panel{
     background-color:$bgColor;
-    color:$fontColor;
+    color:$themeFont;
     position:fixed;
     width:100%;
     display:flex;
+    justify-content: center;
+    padding:1rem;
 
-    #restaurant-name{
-        margin:1rem;
-        font-size:3rem;
+    #restaurant-icon{
+        
+        background-color: $themeFont;
+        width:64px;
+        height:64px;
+        position:fixed;
+        left:0.5rem;
+        top:0.5rem;
+        -webkit-mask-image: url(./icon.svg);
+        mask-image:url(./icon.svg);
+        -webkit-mask-size:64px;
+        mask-size:64px;
+        mask-repeat:no-repeat;
+        
+        
     }
     .nav-bar{
         button{
             height:100%;
             background-color: $bgColor;
-            color:$fontColor;
-            border:1px solid rgba(255, 255, 255, 0.414);
+            color:$themeFont;
+            border:none;
             padding:1rem;
+            font-size:1.5rem;
+            width:15rem;
+        }
+        button:hover{
         }
     }
 }

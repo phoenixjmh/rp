@@ -1,0 +1,27 @@
+
+.menu-frame{
+    margin-top:2rem;
+    border:2px solid black;
+    height:80%;
+    width:60%;
+    background-color: $bgColor;
+    
+
+    overflow:auto;
+    .menu-item{
+        text-align: center;
+        border-bottom:2px solid $themeFont;
+        color:$themeFont;
+        .dish-name{
+            font-size:2rem;
+            padding:1rem;
+            padding-top:2rem;
+
+        }
+            .dish-desc{
+                padding:1.5rem;
+                font-size:1.5rem;
+                padding-bottom:2rem;
+            }
+    }
+}
