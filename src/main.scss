@@ -1,54 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Eczar&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Eczar&display=swap');
-
- $bgColor: rgb(26, 23, 23);
- $cursiveFont:'Courgette',cursive;
- $rusticHeader:'Eczar',serif;
-$fontColor:rgba(255, 197, 121, 0.476);
+$bgColor: rgb(26, 23, 23);
+$cursiveFont: "Courgette", cursive;
+$rusticHeader: "Eczar", serif;
+$fontColor: rgba(255, 197, 121, 0.476);
 $themeFont: hsla(36, 100%, 38%, 0.553);
 
 @mixin mobile {
-    @media (max-width: 468px) {
-      @content;
-    }
+  @media (max-width: 468px) {
+    @content;
   }
+}
 
 @import "home";
 @import "nav";
 @import "menu";
 @import "story";
 
-*{
-    margin:0;
+* {
+  margin: 0;
 }
 
-body{
-width:100vw;
-height:100vh;
-background-color: white;
-font-size:16pt;
-
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  font-size: 16pt;
 }
-#content{
-    background:url(./img/dining-room.jpg);
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction: column;
-    
+#content {
+  background: url(./img/dining-room.jpg);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.content-panel{
-    display:flex;
-    width:100%;
-    height:100%;
-    justify-content: center;
-    // align-items: center;
-    overflow:auto;
-    @include mobile{
-        top:2rem;
-        position:static;
-        
-    }
-    
-
+.content-panel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  // align-items: center;
+  overflow: auto;
+  @include mobile {
+    top: 2rem;
+    position: static;
+  }
 }

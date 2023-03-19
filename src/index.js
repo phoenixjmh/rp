@@ -1,36 +1,31 @@
-import loadMain from './loadMain.js';
-import loadStory from './loadStory.js';
-import loadHome from './loadHome.js';
-import loadMenu from './loadMenu.js';
+import loadMain from "./loadMain.js";
+import loadStory from "./loadStory.js";
+import loadHome from "./loadHome.js";
+import loadMenu from "./loadMenu.js";
 
-import style from './main.scss';
+import style from "./main.scss";
 
-const clear =element=>element.innerHTML='';
+const clear = (element) => (element.innerHTML = "");
 
-console.log('boy');
+console.log("boy");
 loadMain();
-const contentPanel=document.querySelector('.content-panel');
+const contentPanel = document.querySelector(".content-panel");
 loadStory(contentPanel);
-// loadHome(contentPanel);
-// loadMenu(contentPanel);
 
-const menuButton = document.querySelector('#menu-button');
-const storyButton = document.querySelector('#story-button');
-const homeButton = document.querySelector('#home-button');
+const menuButton = document.querySelector("#menu-button");
+const storyButton = document.querySelector("#story-button");
+const homeButton = document.querySelector("#home-button");
 
-
-
-
-storyButton.addEventListener('click', ()=>{
-clear(contentPanel);
-loadStory(contentPanel);
+storyButton.addEventListener("click", () => {
+  clear(contentPanel);
+  loadStory(contentPanel);
 });
-homeButton.addEventListener('click', ()=>{
-    clear(contentPanel);
-    loadHome(contentPanel);
-    });
+homeButton.addEventListener("click", () => {
+  clear(contentPanel);
+  loadHome(contentPanel);
+});
 
-    menuButton.addEventListener("click", () => {
-      clear(contentPanel);
-      loadMenu(contentPanel);
-    });
+menuButton.addEventListener("click", () => {
+  clear(contentPanel);
+  loadMenu(contentPanel);
+});
